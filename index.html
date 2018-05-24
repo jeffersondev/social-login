@@ -7,14 +7,22 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="google-signin-client_id" content="739348121633-shhqee380lhbi1kb575111btcfti406r.apps.googleusercontent.com">
   <title>Social Login</title>
-  <script src="https://apis.google.com/js/platform.js" async defer></script>
-  <script src="./index.js"></script>
+  <link rel="stylesheet" href="./index.css">
 </head>
 
-<body>
-  <h1>Social Login</h1>
-  <div class="g-signin2" data-onsuccess="onSignIn"></div>
-  <a href="#" onclick="signOut();">Sign out</a>
+<body class="container">
+  <header class="header">
+    <h1>Social Login</h1>
+  </header>
+
+  <section class="google-login">
+    <h2>Google Login</h2>
+    <div id="signInButton" class="g-signin2" data-onsuccess="onSignIn"></div>
+    <a id="signOutButton" href="#" onclick="signOut()">Sign out</a>
+  </section>
+
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+  <script src="./index.js"></script>
 </body>
 
 </html>
