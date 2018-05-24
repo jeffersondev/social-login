@@ -1,7 +1,5 @@
 .container {
-  display: flex;
-}
-
-.header .google-login {
   width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
 }
